@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ACOIMPRE de R.L. | Simulador de Crédito</title>
-<link rel="icon" href="images/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="images/apple-icon.png">
+<link rel="icon" href="images/logo.png" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/logo.png">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
 <style>
   body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-  input[type=range]::-webkit-slider-thumb {
+  input[type=range]::-webkit-slider-thumb {  
     -webkit-appearance: none;
     appearance: none;
     width: 18px; height: 18px; border-radius: 9999px;
@@ -33,31 +33,31 @@
       <a href="index.html" class="flex items-center gap-2 shrink-0">
         <img src="images/logo.png" alt="ACOIMPRE Logo" class="h-9 md:h-10 w-auto">
       </a>
-      <nav class="hidden lg:flex items-center gap-4 xl:gap-6 flex-1 justify-center">
-        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Inicio</a>
+    <nav class="hidden lg:flex items-center gap-4 xl:gap-6 flex-1 justify-center">
+        <a href="index.html" class="text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Inicio</a>
         <a href="servicios.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Servicios</a>
         <a href="ahorros.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Ahorros</a>
-        <a href="simulador-credito.html" class="text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Simulador de Crédito</a>
+        <a href="simulador-credito.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Simulador de Crédito</a>
         <a href="galeria.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Galería de Eventos</a>
-        <a href="informacion-asociados.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Información de Asociados</a>
+        <a href="informacion-asociados.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Información</a>
         <a href="nosotros.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Nosotros</a>
         <a href="contacto.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Contacto</a>
-        <a href="haztesocio.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Hazte Socio</a>
+          <a href="haztesocio.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Asociate</a>
       </nav>
-      <button id="menuBtn" class="lg:hidden text-gray-700">
+     <button id="menuBtn" aria-label="Abrir menú" class="lg:hidden text-gray-700 hover:text-blue-600 p-2 -mr-2">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
     </div>
     <nav id="mobileMenu" class="hidden lg:hidden flex flex-col px-4 pb-3 border-t border-gray-100">
-      <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium py-3 border-b border-gray-100">Inicio</a>
-      <a href="servicios.html" class="text-gray-700 hover:text-blue-600 font-medium py-3 border-b border-gray-100">Servicios</a>
-      <a href="ahorros.html" class="text-gray-700 hover:text-blue-600 font-medium py-3 border-b border-gray-100">Ahorros</a>
-      <a href="simulador-credito.html" class="text-blue-600 font-medium py-3 border-b border-gray-100">Simulador de Crédito</a>
-      <a href="galeria.html" class="text-gray-700 hover:text-blue-600 font-medium py-3 border-b border-gray-100">Galería de Eventos</a>
-      <a href="informacion-asociados.html" class="text-gray-700 hover:text-blue-600 font-medium py-3 border-b border-gray-100">Información de Asociados</a>
-      <a href="nosotros.html" class="text-gray-700 hover:text-blue-600 font-medium py-3 border-b border-gray-100">Nosotros</a>
-      <a href="contacto.html" class="text-gray-700 hover:text-blue-600 font-medium py-3 border-b border-gray-100">Contacto</a>
-      <a href="haztesocio.html" class="text-gray-700 hover:text-blue-600 font-medium py-3">Hazte Socio</a>
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium py-3 border-b border-gray-100">Inicio</a>
+        <a href="servicios.html" class="text-gray-700 hover:text-blue-600 font-medium py-3 border-b border-gray-100">Servicios</a>
+        <a href="ahorros.html" class="text-gray-700 hover:text-blue-600 font-medium py-3 border-b border-gray-100">Ahorros</a>
+        <a href="simulador-credito.html" class="text-gray-700 hover:text-blue-600 font-medium py-3 border-b border-gray-100">Simulador de Crédito</a>
+        <a href="galeria.html" class="text-gray-700 hover:text-blue-600 font-medium py-3 border-b border-gray-100">Galería de Eventos</a>
+        <a href="informacion-asociados.html" class="text-gray-700 hover:text-blue-600 font-medium py-3 border-b border-gray-100">Información</a>
+        <a href="nosotros.html" class="text-gray-700 hover:text-blue-600 font-medium py-3 border-b border-gray-100">Nosotros</a>
+        <a href="contacto.html" class="text-gray-700 hover:text-blue-600 font-medium py-3 border-b border-gray-100">Contacto</a>
+       <a href="haztesocio.html" class="text-gray-700 hover:text-blue-600 font-medium py-">Asociate</a>  
     </nav>
   </header>
 
@@ -92,17 +92,40 @@
                  class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm mb-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
           <input type="range" id="loanAmountRange" value="10000" min="500" max="100000" step="100" class="w-full">
         </div>
+<!-- Tipo de préstamo -->
+<div class="mb-6">
+  <label for="loanType" class="block text-sm font-semibold text-gray-700 mb-2">
+    Tipo de préstamo
+  </label>
 
-        <!-- Tasa -->
-        <div class="mb-6">
-          <div class="flex items-center justify-between mb-2">
-            <label for="interestRate" class="text-sm font-semibold text-gray-700">Tasa de interés anual</label>
-            <span class="text-sm font-bold text-[#0052A5]" id="interestRateValue">5.5%</span>
-          </div>
-          <input type="number" id="interestRate" value="5.5" min="0" max="100" step="0.1"
-                 class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm mb-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
-          <input type="range" id="interestRateRange" value="5.5" min="0" max="30" step="0.1" class="w-full">
-        </div>
+  <select
+    id="loanType"
+    class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0052A5]"
+  >
+    <option value="extraordinario">Crédito Extraordinario sobre Ahorro</option>
+    <option value="aportes">Préstamo sobre Aportes</option>
+    <option value="personal">Préstamos Personales</option>
+    <option value="express">Préstamos Express</option>
+    <option value="tarjetas">Pago de Tarjetas de Crédito</option>
+    <option value="medicos">Préstamos para Gastos Médicos y Funerarios</option>
+  </select>
+</div>
+
+<!-- Tasa -->
+<div class="mb-6">
+  <div class="flex items-center justify-between bg-blue-50 border border-blue-200 rounded-lg px-4 py-3">
+    <span class="text-sm font-medium text-gray-700">
+      Tasa de interés anual
+    </span>
+
+    <span
+      id="interestRateValue"
+      class="bg-[#0052A5] text-white px-4 py-1 rounded-full font-bold"
+    >
+      15%
+    </span>
+  </div>
+</div>
 
         <!-- Plazo -->
         <div class="mb-6">
@@ -122,9 +145,14 @@
                  class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
         </div>
 
-        <p class="text-xs text-gray-400 mt-4">
-          Este simulador es orientativo. Las condiciones finales de tu crédito se definen al momento de la solicitud.
-        </p>
+        <div class="mt-5 flex items-start gap-3 bg-blue-50 border border-blue-200 rounded-lg p-4">
+  <i data-lucide="info" class="w-5 h-5 text-[#0052A5] flex-shrink-0 mt-0.5"></i>
+
+  <p class="text-sm text-gray-700 leading-6">
+    <span class="font-semibold text-[#0052A5]">Importante:</span>
+    Este simulador es únicamente una herramienta de referencia. Las condiciones finales del crédito, incluyendo monto, plazo y aprobación, serán determinadas por ACOIMPRE al momento de realizar la solicitud.
+  </p>
+</div>
 
         <a href="haztesocio.html" class="mt-6 block text-center bg-red-600 hover:bg-red-700 transition text-white font-medium px-6 py-3 rounded-md">
           Solicitar este Crédito
@@ -260,6 +288,20 @@
   </footer>
 
   <script>
+
+    //Tasa de interés anual según tipo de préstamo
+    const loanType = document.getElementById("loanType");
+const interestRateValue = document.getElementById("interestRateValue");
+
+loanType.addEventListener("change", () => {
+    if (loanType.value === "express") {
+        interestRateValue.textContent = "24%";
+    } else {
+        interestRateValue.textContent = "15%";
+    }
+    update();
+});
+
     // Menú móvil
     document.addEventListener('DOMContentLoaded', function () {
       var menuBtn = document.getElementById('menuBtn');
@@ -271,7 +313,7 @@
     lucide.createIcons();
 
     // ---------- Lógica del simulador de crédito ----------
-    // Misma lógica que la plantilla "Simple Loan Calculator": amortización de cuota fija (sistema francés).
+  
 
     const fmtCurrency = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
     const fmtDate = new Intl.DateTimeFormat('es-SV', { year: 'numeric', month: 'short', day: 'numeric' });
@@ -280,9 +322,7 @@
       amount: document.getElementById('loanAmount'),
       amountRange: document.getElementById('loanAmountRange'),
       amountValue: document.getElementById('loanAmountValue'),
-      rate: document.getElementById('interestRate'),
-      rateRange: document.getElementById('interestRateRange'),
-      rateValue: document.getElementById('interestRateValue'),
+            rateValue: document.getElementById('interestRateValue'),
       years: document.getElementById('loanYears'),
       yearsRange: document.getElementById('loanYearsRange'),
       yearsValue: document.getElementById('loanYearsValue'),
@@ -312,7 +352,7 @@
 
     function calculateLoan() {
       const principal = Math.max(0, parseFloat(el.amount.value) || 0);
-      const annualRate = Math.max(0, parseFloat(el.rate.value) || 0) / 100;
+      let annualRate = loanType.value === 'express' ? 0.24 : 0.15;
       const years = Math.max(0, parseInt(el.years.value) || 0);
       const startDate = el.startDate.valueAsDate || new Date();
 
@@ -426,7 +466,6 @@
     }
 
     syncPair(el.amount, el.amountRange, el.amountValue, v => fmtCurrency.format(parseFloat(v) || 0));
-    syncPair(el.rate, el.rateRange, el.rateValue, v => `${parseFloat(v).toFixed(1)}%`);
     syncPair(el.years, el.yearsRange, el.yearsValue, v => `${parseInt(v)} años`);
     el.startDate.addEventListener('input', update);
 
