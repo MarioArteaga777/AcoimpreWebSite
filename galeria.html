@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACOIMPRE de R.L. | Galería de Eventos</title>
+<link rel="icon" href="images/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/apple-icon.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+      <a href="index.html" class="flex items-center gap-2 shrink-0">
+        <img src="images/logo.png" alt="ACOIMPRE Logo" class="h-9 md:h-10 w-auto">
+      </a>
+      <nav class="hidden lg:flex items-center gap-4 xl:gap-6 flex-1 justify-center">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Inicio</a>
+        <a href="servicios.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Servicios</a>
+        <a href="ahorros.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Ahorros</a>
+        <a href="simulador-credito.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Simulador de Crédito</a>
+        <a href="galeria.html" class="text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Galería de Eventos</a>
+        <a href="informacion-asociados.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Información de Asociados</a>
+        <a href="nosotros.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Nosotros</a>
+        <a href="contacto.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Contacto</a>
+         <a href="haztesocio.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors text-[15px] xl:text-base">Hazte Socio</a>
+      </nav>
+      <button id="menuBtn" aria-label="Abrir menú" class="lg:hidden text-gray-700 hover:text-blue-600 p-2 -mr-2">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+    <nav id="mobileMenu" class="hidden lg:hidden flex flex-col px-4 pb-3 border-t border-gray-100">
+      <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors py-3 border-b border-gray-100">Inicio</a>
+      <a href="servicios.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors py-3 border-b border-gray-100">Servicios</a>
+      <a href="ahorros.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors py-3 border-b border-gray-100">Ahorros</a>
+      <a href="simulador-credito.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors py-3 border-b border-gray-100">Simulador de Crédito</a>
+      <a href="galeria.html" class="text-blue-600 font-medium whitespace-nowrap transition-colors py-3 border-b border-gray-100">Galería de Eventos</a>
+      <a href="informacion-asociados.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors py-3 border-b border-gray-100">Información de Asociados</a>
+      <a href="nosotros.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors py-3 border-b border-gray-100">Nosotros</a>
+      <a href="contacto.html" class="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap transition-colors py-3 border-b border-gray-100">Contacto</a>
+      <button class="text-left text-gray-700 hover:text-blue-600 font-medium py-3">Iniciar Sesión</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-[#0052A5] py-14 md:py-20 px-6 text-white">
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Galería de Eventos</h1>
+      <p class="text-blue-100 text-lg max-w-2xl mx-auto">
+        Revive los momentos más importantes junto a nuestra comunidad de asociados.
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="py-16 px-6 bg-[#f5f7fb]">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
+
+        <button class="gallery-item group relative rounded-2xl overflow-hidden shadow-md" data-caption="Asamblea General de Asociados">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=450&fit=crop" alt="Asamblea General de Asociados" class="w-full h-56 object-cover group-hover:scale-105 transition duration-300">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition flex items-end p-4">
+            <span class="text-white font-semibold opacity-0 group-hover:opacity-100 transition">Asamblea General de Asociados</span>
+          </div>
+        </button>
+
+        <button class="gallery-item group relative rounded-2xl overflow-hidden shadow-md" data-caption="Jornada de Educación Financiera">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=450&fit=crop" alt="Jornada de Educación Financiera" class="w-full h-56 object-cover group-hover:scale-105 transition duration-300">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition flex items-end p-4">
+            <span class="text-white font-semibold opacity-0 group-hover:opacity-100 transition">Jornada de Educación Financiera</span>
+          </div>
+        </button>
+
+        <button class="gallery-item group relative rounded-2xl overflow-hidden shadow-md" data-caption="Día del Asociado">
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&h=450&fit=crop" alt="Día del Asociado" class="w-full h-56 object-cover group-hover:scale-105 transition duration-300">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition flex items-end p-4">
+            <span class="text-white font-semibold opacity-0 group-hover:opacity-100 transition">Día del Asociado</span>
+          </div>
+        </button>
+
+        <button class="gallery-item group relative rounded-2xl overflow-hidden shadow-md" data-caption="Entrega de Becas Estudiantiles">
+          <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=450&fit=crop" alt="Entrega de Becas Estudiantiles" class="w-full h-56 object-cover group-hover:scale-105 transition duration-300">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition flex items-end p-4">
+            <span class="text-white font-semibold opacity-0 group-hover:opacity-100 transition">Entrega de Becas Estudiantiles</span>
+          </div>
+        </button>
+
+        <button class="gallery-item group relative rounded-2xl overflow-hidden shadow-md" data-caption="Capacitación al Equipo ACOIMPRE">
+          <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&h=450&fit=crop" alt="Capacitación al Equipo ACOIMPRE" class="w-full h-56 object-cover group-hover:scale-105 transition duration-300">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition flex items-end p-4">
+            <span class="text-white font-semibold opacity-0 group-hover:opacity-100 transition">Capacitación al Equipo ACOIMPRE</span>
+          </div>
+        </button>
+
+        <button class="gallery-item group relative rounded-2xl overflow-hidden shadow-md" data-caption="Celebración de Aniversario">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=450&fit=crop" alt="Celebración de Aniversario" class="w-full h-56 object-cover group-hover:scale-105 transition duration-300">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition flex items-end p-4">
+            <span class="text-white font-semibold opacity-0 group-hover:opacity-100 transition">Celebración de Aniversario</span>
+          </div>
+        </button>
+
+      </div>
+
+      <p class="text-center text-gray-500 text-sm mt-10">
+        ¿Tienes fotos de un evento de ACOIMPRE? Compártelas con nosotros a través de
+        <a href="contacto.html" class="text-[#0052A5] font-medium hover:underline">nuestro formulario de contacto</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="hidden fixed inset-0 z-[100] bg-black/90 items-center justify-center p-4">
+    <button id="closeLightbox" class="absolute top-5 right-5 text-white hover:text-gray-300" aria-label="Cerrar">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <div class="max-w-3xl w-full">
+      <img id="lightboxImg" src="" alt="" class="w-full rounded-lg">
+      <p id="lightboxCaption" class="text-white text-center mt-4 text-lg font-medium"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-[#1a1a2e] text-white py-12 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+      <div>
+        <h3 class="font-bold text-lg mb-4">ACOIMPRE</h3>
+        <p class="text-gray-400 text-sm">
+         Construyendo sueños juntos.
+        </p>
+        <div class="flex gap-3 mt-4">
+          <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Servicios</h4>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a href="servicios.html" class="hover:text-white">Ahorro Programado</a></li>
+          <li><a href="servicios.html" class="hover:text-white">Créditos Personales</a></li>
+          <li><a href="servicios.html" class="hover:text-white">Beneficios de Consumo</a></li>
+          <li><a href="ahorros.html" class="hover:text-white">Ahorros</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Empresa</h4>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a href="nosotros.html" class="hover:text-white">Nosotros</a></li>
+          <li><a href="galeria.html" class="hover:text-white">Galería de Eventos</a></li>
+          <li><a href="informacion-asociados.html" class="hover:text-white">Información de Asociados</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Contacto</h4>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i> +503 2222-0100</li>
+          <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4"></i> elisa.cabrera@impressarepuestos.com</li>
+         
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+      © 2026 ACOIMPRE de R.L. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var menuBtn = document.getElementById('menuBtn');
+      var mobileMenu = document.getElementById('mobileMenu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', function () { mobileMenu.classList.toggle('hidden'); });
+      }
+
+      var lightbox = document.getElementById('lightbox');
+      var lightboxImg = document.getElementById('lightboxImg');
+      var lightboxCaption = document.getElementById('lightboxCaption');
+
+      document.querySelectorAll('.gallery-item').forEach(function (item) {
+        item.addEventListener('click', function () {
+          var img = item.querySelector('img');
+          lightboxImg.src = img.src.replace('w=600&h=450', 'w=1200&h=900');
+          lightboxImg.alt = item.dataset.caption;
+          lightboxCaption.textContent = item.dataset.caption;
+          lightbox.classList.remove('hidden');
+          lightbox.classList.add('flex');
+        });
+      });
+
+      function closeLightbox() {
+        lightbox.classList.add('hidden');
+        lightbox.classList.remove('flex');
+      }
+      document.getElementById('closeLightbox').addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeLightbox();
+      });
+    });
+    lucide.createIcons();
+  </script>
+</body>
+</html>
