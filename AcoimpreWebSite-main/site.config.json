@@ -1,0 +1,70 @@
+{
+  "_ayuda": "Edita aquí los datos del sitio y ejecuta `npm run build` para propagarlos a las 9 páginas.",
+  "siteName": "ACOIMPRE de R.L.",
+  "siteUrl": "",
+  "_siteUrl": "Dominio final SIN barra al final, ej. https://www.midominio.com. Mientras esté vacío no se generan canonical, og:url, og:image ni sitemap.xml.",
+  "phoneDisplay": "+503 2212-0810",
+  "phoneTel": "+50322120810",
+  "whatsappDisplay": "+503 7740-4412",
+  "whatsappNumber": "50377404412",
+  "email": "elisa.cabrera@impressarepuestos.com",
+  "formEndpoint": "",
+  "_formEndpoint": "URL de Formspree (https://formspree.io/f/XXXXXXXX) u otro servicio. Si está vacío, el formulario abre el correo del usuario con el mensaje ya redactado (mailto).",
+  "social": {
+    "facebook": "",
+    "instagram": "",
+    "linkedin": ""
+  },
+  "_social": "Pon la URL real de cada red; las que queden vacías no se muestran en el footer.",
+  "ogImage": "images/og-image.jpg",
+  "nav": [
+    { "href": "index.html",                 "label": "Inicio" },
+    { "href": "nosotros.html",              "label": "Nosotros" },
+    { "href": "servicios.html",             "label": "Servicios" },
+    { "href": "ahorros.html",               "label": "Ahorros" },
+    { "href": "simulador-credito.html",     "label": "Simulador de Crédito" },
+    { "href": "informacion-asociados.html", "label": "Información de Asociados", "short": "Información" },
+    { "href": "galeria.html",               "label": "Galería de Eventos" },
+    { "href": "contacto.html",              "label": "Contacto" }
+  ],
+  "cta": { "href": "haztesocio.html", "label": "Asóciate" },
+  "pages": {
+    "index.html": {
+      "title": "ACOIMPRE de R.L. | Inicio",
+      "description": "ACOIMPRE de R.L., tu cooperativa de confianza: cuentas de ahorro, créditos y beneficios para asociados y sus familias."
+    },
+    "nosotros.html": {
+      "title": "ACOIMPRE de R.L. | Nosotros",
+      "description": "Conoce quiénes somos en ACOIMPRE de R.L.: nuestra misión, visión y valores al servicio del desarrollo de nuestros asociados."
+    },
+    "servicios.html": {
+      "title": "ACOIMPRE de R.L. | Servicios",
+      "description": "Servicios financieros y beneficios de ACOIMPRE de R.L. pensados para el bienestar y crecimiento de nuestros asociados."
+    },
+    "ahorros.html": {
+      "title": "ACOIMPRE de R.L. | Ahorros",
+      "description": "Abre tu cuenta de ahorro en ACOIMPRE de R.L. y haz crecer tu dinero con los beneficios exclusivos para asociados."
+    },
+    "simulador-credito.html": {
+      "title": "ACOIMPRE de R.L. | Simulador de Crédito",
+      "description": "Calcula tu cuota mensual, el interés total y la tabla de amortización de tu préstamo con el simulador de crédito de ACOIMPRE de R.L.",
+      "extraHead": "<link rel=\"stylesheet\" href=\"css/simulador.css\">"
+    },
+    "informacion-asociados.html": {
+      "title": "ACOIMPRE de R.L. | Información de Asociados",
+      "description": "Beneficios, canales de atención y productos financieros disponibles para los asociados de ACOIMPRE de R.L."
+    },
+    "galeria.html": {
+      "title": "ACOIMPRE de R.L. | Galería de Eventos",
+      "description": "Revive los momentos más importantes de la comunidad ACOIMPRE de R.L.: asambleas, jornadas y celebraciones con nuestros asociados."
+    },
+    "contacto.html": {
+      "title": "ACOIMPRE de R.L. | Contacto",
+      "description": "Contáctanos por WhatsApp, teléfono, correo o visita nuestra oficina. Te ayudamos con ahorros, créditos y servicios de ACOIMPRE de R.L."
+    },
+    "haztesocio.html": {
+      "title": "ACOIMPRE de R.L. | Hazte Socio",
+      "description": "Descarga los formularios para asociarte a ACOIMPRE de R.L. y entrégalos en nuestras oficinas o con tu asesor."
+    }
+  }
+}
