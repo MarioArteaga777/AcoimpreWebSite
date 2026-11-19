@@ -1,0 +1,18 @@
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+      <a href="index.html" class="flex items-center gap-2 shrink-0">
+        <img src="images/logo.webp" alt="ACOIMPRE de R.L." width="264" height="96" class="h-9 md:h-10 w-auto">
+      </a>
+      <nav aria-label="Navegación principal" class="hidden lg:flex items-center gap-4 xl:gap-6 flex-1 justify-center">
+{{navDesktop}}
+        <a href="{{ctaHref}}" class="bg-[#0052A5] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#003d7a] transition whitespace-nowrap shadow-sm">{{ctaLabel}}</a>
+      </nav>
+      <button id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu" class="lg:hidden text-gray-700 hover:text-blue-600 p-2 -mr-2">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+    <nav id="mobileMenu" aria-label="Navegación móvil" class="hidden lg:hidden flex flex-col px-4 pb-3 border-t border-gray-100">
+{{navMobile}}
+      <a href="{{ctaHref}}" class="text-gray-700 hover:text-blue-600 font-medium py-3">{{ctaLabel}}</a>
+    </nav>
+  </header>
